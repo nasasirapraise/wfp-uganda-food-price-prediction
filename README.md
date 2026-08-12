@@ -28,6 +28,8 @@ Dataset
 
 The dataset used in this project is the Uganda Food Prices dataset from the World Food Programme (WFP).
 
+Original Dataset
+
 - Country: Uganda
 - Observations: 30,933
 - Features: 16
@@ -46,6 +48,7 @@ Important variables include:
 - Unit
 - Pricetype
 - Price
+After data cleaning and feature preparation, the final modelling dataset contained 23,384 observations and 11 input features before categorical encoding.
 
  Data Preparation
 
@@ -65,12 +68,13 @@ The exploratory analysis examined food price distributions, commodity prices, fo
 
 Key Findings
 
-- Food prices were positively skewed, with most observations concentrated at lower price levels and some high-value observations.
+- - Food prices were positively skewed, with most observations concentrated at lower price levels and some high-value observations.
 - Fish (dry) and vegetable oil were among the higher-priced commodities.
 - Cassava (fresh) was among the lower-priced commodities.
-- Meat, fish and eggs recorded relatively higher average prices.
-- Average food prices generally increased over time.
+- Meat, Fish & Eggs recorded relatively higher average prices.
+- Average food prices generally increased over time, with some periods of fluctuation.
 - The relationship between geographical coordinates and price was relatively weak.
+- Commodity type, food category, time, and market-related characteristics  appeared to be important factors for food price prediction.
 
  Machine Learning Models
 
@@ -145,7 +149,15 @@ Recommendations
 
 Future Improvements
 
-Future work could improve prediction performance by incorporating additional economic, environmental, and supply-related variables.
+Future work could improve prediction performance by incorporating additional factors such as:
+
+- Weather conditions
+- Inflation
+- Fuel prices
+- Seasonal production
+- Supply conditions
+- Transportation costs
+- Economic indicators
 
 Integrating these additional factors may provide a more comprehensive representation of the drivers of food prices in Uganda.
 
