@@ -48,6 +48,7 @@ Important variables include:
 - Unit
 - Pricetype
 - Price
+
 After data cleaning and feature preparation, the final modelling dataset contained 23,384 observations and 11 input features before categorical encoding.
 
  Data Preparation
@@ -98,14 +99,14 @@ The models were evaluated using:
 
  Results
 
-| Model | MAE | RMSE | R² |
-|---|---:|---:|---:|
-| Random Forest | 335.20 | 1242.19 | 90.74% |
-| Neural Network | 702.64 | 1513.58 | 86.25% |
+| Model         | MAE  | RMSE  | R²    |
+|---            |-     | ---:  |---:  |
+| Random Forest |335.20|1242.19|90.74%|
+| Neural Network|702.64|1513.58|86.25%|
 
 Best-Performing Model
 
-The Random Forest model performed better than the Neural Network across all three evaluation metrics.
+The Random Forest model performed better than the Neural Network across all three-evaluation metrics.
 
 It achieved:
 
@@ -115,10 +116,11 @@ It achieved:
 
 Therefore, Random Forest was selected as the best-performing model for this project.
 
-Working Demo
+Accessing the Demo
 
-A working prediction interface was developed to demonstrate food price prediction.
+The working prediction interface is available in the Jupyter Notebook included in this repository.
 
+Open `Uganda_Food_Price_Prediction_ML.ipynb` and run the demo/interface cells to interact with the food price prediction model.
 The interface allows users to provide information such as:
 
 - Administrative region
